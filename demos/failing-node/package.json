@@ -1,0 +1,13 @@
+{
+  "name": "failing-node-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "f1": "node -e \"import('definitely-missing-package-xyz')\"",
+    "f2": "tsc -p tsconfig.f2.json",
+    "f3": "node --test src/test-break.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
