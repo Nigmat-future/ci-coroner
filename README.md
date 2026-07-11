@@ -1,10 +1,12 @@
-# CI Autopsy
+# ci-coroner
 
-**Evidence-backed CI failure reports for GitHub Actions.**
+**Coroner for your CI — evidence-backed failure autopsy.**
 
-When a job goes red, CI Autopsy compresses the noisy logs, redacts secrets, asks an LLM for a structured diagnosis, **verifies every evidence quote appears in the real log/diff**, and posts (or updates) a single PR comment.
+When a job goes red, ci-coroner compresses noisy logs, redacts secrets, asks an LLM for a structured diagnosis, **verifies every evidence quote appears in the real log/diff**, and posts (or updates) a single PR comment.
 
-This is a weekend-scoped portfolio project: installable Action + local CLI + fixture demos — not a multi-tenant SaaS.
+**Product direction (方案 A):** org-level **GitHub App + failure memory + hosted analysis**, so teams get a report on every red PR and the product gets smarter on repeat signatures. See [`docs/PRD.md`](./docs/PRD.md).
+
+**Today in this repo:** open-source **core library + CLI + GitHub Action** (the analysis kernel and a no-backend path). App/backend/billing are the product track, not fully shipped yet.
 
 ## Quick start
 
