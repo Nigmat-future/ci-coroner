@@ -1,0 +1,19 @@
+{
+  "name": "@ci-autopsy/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "ci-autopsy": "./dist/main.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@ci-autopsy/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.2"
+  }
+}

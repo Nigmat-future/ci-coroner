@@ -1,0 +1,10 @@
+{
+  "name": "ci-autopsy-agent",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "pnpm --filter @ci-autopsy/core test",
+    "typecheck": "pnpm -r run typecheck"
+  }
+}
